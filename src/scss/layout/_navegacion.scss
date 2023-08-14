@@ -1,0 +1,315 @@
+.derecha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+        align-items: flex-end;
+    }
+
+    .dark-mode-boton{
+        width: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        filter: invert(100%);
+
+        &:hover{
+            cursor: pointer;
+            
+           
+            
+        }
+
+        @include tablet{
+            margin-top: 0;
+        }
+        
+
+        
+    }
+}
+
+
+.barra {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+   
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        .logo{
+            
+            max-height: 10rem;
+            max-width: 18rem;
+        }
+
+    }
+    .a {
+        .logo{
+        
+            max-height: 10rem;
+            max-width: 15rem;
+        }
+
+
+    }
+
+    
+     
+
+    
+    
+}
+
+.navegacion {
+
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear, height .5s linear;
+    list-style: none;
+    text-align: left;
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+        
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    a{
+        color: $blanco;
+        text-decoration: none;
+        
+        font-size: 2.6rem;
+        display: block;
+        padding-right: 10px;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.842);
+        
+           
+
+        @include tablet {
+            margin-right: 2rem;
+                
+
+            
+
+        }
+
+    }
+
+    
+    
+    
+   
+    
+
+}
+
+.menu-horizontal{
+    display: block;
+    list-style: none;
+    
+    li{
+        a{
+            
+            padding: 15px 15px;
+            text-decoration: none;
+
+        }
+    }
+    @include tablet {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+   
+    text-align: left;
+    padding: 15px 10px;
+    z-index: 1;
+    
+    
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+   
+    
+  
+}
+.menu-vertical li:hover a{
+    color: #ffe600;
+    background-color: $verde;
+}
+
+.menu-vertical{
+    li{
+        padding-bottom: 3px;
+        
+       
+        a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            border: 2px solid $verde;
+            margin: 0 0;
+            background-color: #1a1a1a;
+            
+            
+            
+            
+        }
+    }
+}
+
+
+
+.navegacion a:hover {
+  color: #ffe600;
+}
+/** Menu de hamburguesa **/
+.mobile-menu{
+    cursor: pointer;
+    
+    
+    @include tablet{
+        display: none;
+        
+    }
+    img{
+        width: 5rem;
+        
+        
+    }
+    
+}
+
+
+
+.mostrar{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    line-height: 1.3;    
+}
+
+
+.contenido-header{
+    .hero {
+        visibility: hidden;
+        @include tablet{
+            visibility: visible;
+        }
+            h1 {
+                display: block;
+                width: fit-content;
+                font-size: 4rem;
+                position: relative;
+                color: transparent;
+                animation: text_reveal 0.5s ease forwards;
+                animation-delay: 1s;
+                
+
+                span {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0;
+                    background-color:$verde;
+                    animation: text_reveal_box 1s ease;
+                    animation-delay: 0.5s;
+                }
+            }
+         }
+        .hero {
+            h1:nth-child(1) {
+            animation-delay: 1s;}
+        }
+        .hero {
+            h1:nth-child(2) {
+            animation-delay: 2s;}
+        }
+        .hero {h1:nth-child(3) {
+            animation: text_reveal_name 0.5s ease forwards;
+            animation-delay: 3s;}
+        }
+        
+        .hero {
+            h1:nth-child(1) {
+                span {
+                    animation-delay: 0.5s;
+                }
+            }
+        }
+        .hero {
+            h1:nth-child(2) {
+                span {
+                    animation-delay: 1.5s;
+                }
+            }
+        }
+        .hero {
+            h1:nth-child(3) {
+                span {
+                    animation-delay: 2.5s;
+                }
+            }
+        }
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid $verde;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.842);
+}
+.cta:hover {
+	color: white;
+	background-color: $verde;
+}
+
+        
+ @keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: white;
+        -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.842);
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: $verde;
+		font-weight: 500;
+        -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.842);
+	}
+}
+/* End Keyframes */          
+}
+

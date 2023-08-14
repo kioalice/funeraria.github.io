@@ -1,0 +1,81 @@
+.seccion {
+    margin-top: $separacion / 2;
+    margin-bottom: $separacion / 2;
+}
+.contenido-centrado {
+    max-width: 40rem;
+    padding-top: 10px;
+   .imagen :hover{
+        -webkit-transform: scale(1.13);
+        -moz-transform: scale(1.13);
+        -ms-transform: scale(1.13);
+        -o-transform: scale(1.13);
+        transform: scale(1.13);
+        -webkit-transition: all .9s ease;
+    }
+
+   
+    
+
+}
+
+.texto-servicio {
+    padding-left: 3rem;
+    blockquote{
+        font-weight: $black;
+        font-size: 2.2rem;
+        margin: 0;
+        padding-left: 1rem 0 3rem 0;
+    }
+
+    
+
+    .iconos-caracteristicas {
+
+        
+       
+        list-style: none;
+        padding: 0;
+        max-width: 40rem;
+   
+    }
+
+        
+}
+
+.alinear-derecha{
+    display: flex;
+    justify-content: flex-end;
+
+    
+}
+
+.alinear-centro{
+    display: flex;
+    justify-content:center;
+
+    @include tablet{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+}
+
+.alinear-centro-testimonio{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    @include tablet{
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+.w-100{
+    width: 100%;
+}
+

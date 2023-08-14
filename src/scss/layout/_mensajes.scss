@@ -1,0 +1,30 @@
+.contenedor{
+    .mensaje-respuesta{
+        border: 5px solid darken($verde, 10);
+        border-radius: 5px;
+        padding-top: 20px;
+        background-color: $verde;
+
+        h1{
+            font-weight: bold;
+            color: $blanco;
+        }
+        
+        .respuesta{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding-bottom: 30px;
+
+            
+            
+            .btn-mensaje{
+                align-items: center;
+                text-align: center;
+                display: flex;
+                justify-content:center;
+                
+            }
+        }
+    }
+}

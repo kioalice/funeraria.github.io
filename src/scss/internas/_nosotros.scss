@@ -1,0 +1,48 @@
+
+
+.contenido-nosotros{
+    @include tablet{
+        @include grid(2, 2rem);
+        padding-top: 10px;
+        
+    }
+}
+
+.texto-nosotros blockquote{
+    font-weight: $black;
+    font-size: 2.2rem;
+    margin: 3rem 0 0 0;
+    padding-left: 1rem 0 3rem 0;
+    
+    
+}
+
+.mision-vision blockquote{
+    font-weight: $black;
+    font-size: 2.2rem;
+    margin: 3rem 0 0 0;
+    padding-left: 1rem 0 3rem 0;
+    text-align: center;
+   
+}
+.mision-vision{
+    display: grid;
+    gap: 2rem;
+    
+    @include tablet{
+        text-align: left;
+        @include grid(2, 2rem);    
+        
+    }
+}
+
+
+.texto-nosotros{
+    p{
+        strong{
+            color: $verde;
+            font-size: 2.2rem;
+        }
+
+    }
+}

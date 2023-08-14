@@ -1,0 +1,107 @@
+
+.iconos-servicio{
+    display: block;
+    @include tablet {
+        @include grid(2, 1rem);
+    }
+}
+
+.img-servicio{
+    cursor: pointer;
+    &:hover{
+        animation:pulse1 2s infinite;
+        border-radius: 5px;
+        -webkit-transform: scale(1.13);
+        -webkit-transition: all .8s ease;
+
+            
+    }
+
+
+}
+
+
+@-webkit-keyframes pulse1{
+	0%{-webkit-box-shadow:0 0 0 0 #85e74d}/*COLOR DE LA PULSACION*/
+	70%{-webkit-box-shadow:0 0 0 10px transparent}
+	100%{-webkit-box-shadow:0 0 0 0 transparent}
+}
+@keyframes pulse1{
+	0%{-moz-box-shadow:0 0 0 0 #e7a44d;box-shadow:0 0 0 0 #85e74d} /*COLOR DE LA PULSACION*/
+	70%{-moz-box-shadow:0 0 0 5px transparent;box-shadow:0 0 0 10px transparent}
+	100%{-moz-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}
+}
+
+
+
+.icono{
+    text-align:center;
+    padding: 1.2rem;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    word-wrap: break-word;
+  
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px;
+
+
+
+    img{
+        height: 10rem;
+        
+
+    }
+    h3{
+        text-transform: uppercase;
+        
+
+    }
+    p{
+        text-align: left;
+        display: block;
+
+        
+    }
+}
+
+
+
+
+
+
+.icono:hover {
+  box-shadow: 0 0 25px 0 rgba(20,27,201,.05);
+  cursor: pointer;
+  background-image: 
+    linear-gradient(-45deg, #27b88d 0%, #22dd73 100%);
+  
+}
+
+.iconos-servicio .box:nth-child(1) .icono:hover
+{
+    background-image: 
+    linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+}
+
+.iconos-servicio .box:nth-child(3) .icono:hover
+{
+    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%);
+    
+}
+
+
+
+.iconos-servicio .box:nth-child(4) .icono:hover
+{
+    background-image: 
+    linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%);
+}
+
+
+
+
+
+
+
+

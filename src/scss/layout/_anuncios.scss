@@ -1,0 +1,86 @@
+@include tablet{
+    .contenedor-anuncios{
+        @include grid(4, 1rem);
+    }
+}
+
+.anuncio{
+  
+    border: 1px solid darken($verde, 10);
+    border-radius: 5px;
+   
+
+    .contenido-anuncio{
+        padding: 2rem;
+
+    }
+    h3, p{
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .imagen {
+        
+        img{
+            border-radius: 2px;
+
+        }
+        
+        background:transparent;
+        padding: 0.5rem;
+        cursor: pointer;
+        &:hover{
+            -webkit-transform: scale(1.13);
+            -moz-transform: scale(1.13);
+            -ms-transform: scale(1.13);
+            -o-transform: scale(1.13);
+            transform: scale(1.13);
+            -webkit-transition: all .8s ease;
+            border: 8px solid darken($verde, 8);
+            padding:0;
+            animation:pulse 3s infinite;
+            
+
+        }
+      
+    }
+
+}
+
+
+@-webkit-keyframes pulse{
+	0%{-webkit-box-shadow:0 0 0 0 #85e74d}/*COLOR DE LA PULSACION*/
+	70%{-webkit-box-shadow:0 0 0 10px transparent}
+	100%{-webkit-box-shadow:0 0 0 0 transparent}
+}
+@keyframes pulse{
+	0%{-moz-box-shadow:0 0 0 0 #85e74d;box-shadow:0 0 0 0 #85e74d} /*COLOR DE LA PULSACION*/
+	70%{-moz-box-shadow:0 0 0 5px transparent;box-shadow:0 0 0 10px transparent}
+	100%{-moz-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}
+}
+
+.iconos-caracteristicas{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    max-width: 40rem;
+    li{
+        flex: 1;
+        display: flex;
+       
+
+        img{
+            flex:  0 0 5rem;
+            margin-right: 1rem;
+           border-radius: 55%;
+            
+            flex: 1;
+            display: flex;
+        }
+        p{
+            font-weight: $black;
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+@include tablet{
+    .iconos-nosotros{
+        @include grid(3, 2rem);
+   
+    } 
+}
+
+
+
+.icono{
+    text-align: center;
+    padding: 1.2rem;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+
+
+
+    img{
+        height: 10rem;
+
+    }
+    h3{
+        text-transform: uppercase;
+        
+
+    }
+}
+
+
+@include tablet{
+    .misionvision{
+        @include grid( 2, 2rem);
+        text-align: center;
+    
+    } 
+}

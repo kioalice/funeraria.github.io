@@ -1,0 +1,95 @@
+.dark-mode {
+    background-color: darken($grisOscuro , 10);
+
+    p, legend {
+        color:$blanco;
+    }
+
+    a, h1, h2, h3, h4, h7{
+        color: $gris;
+    }
+    .texto-nosotros blockquote{
+        color: $blanco;
+    }
+    .mision-vision blockquote{
+        color: $blanco;
+    }
+    .servicios-funerarios{
+        tbody{
+            tr{
+                td{
+                    color: $blanco;
+                }
+            }
+
+        }
+    }
+    .anuncio {
+
+        background-image: none;
+        .icon {
+            filter: invert(100%);
+        }
+
+    }
+    .iconos-servicio{
+        .box{
+            .icono{
+                img{
+
+                    filter: invert(100%);
+                }
+                
+            }
+        }
+
+    }
+    .servicio-asesoria{
+        .box{
+            border: 1px solid darken($verde, 10);
+            border-radius: 10px;
+            .icono{
+                p{
+                    span{
+                        
+                        filter: invert(100%);
+                   
+
+                    }
+                }
+                i{
+                    filter: invert(100%);
+
+                }
+            }
+        }
+
+    }
+    .container{
+        #next, #prev{
+            
+            color: $blanco;
+            &:hover{
+                color: $verde;
+    
+            }
+        
+        }
+    }
+    .formulario {
+        label,
+        legend, 
+        p {
+            color: $gris;
+        }
+
+        input:not([type="submit"]),
+        textarea,
+        select {
+            background-color: $grisOscuro;
+            border: 1px solid $grisOscuro;
+            color: $blanco;
+        }
+    }
+    
+}

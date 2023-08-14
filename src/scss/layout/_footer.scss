@@ -1,0 +1,191 @@
+
+
+
+.footer{
+    padding: $separacion / 2 0 ;
+    background-color:  $verde;
+    margin-bottom: 0;
+    .contenedor-footer {
+        padding-top:  $separacion / 2;
+
+        
+        @include tablet{
+            @include grid(3, 2rem);
+            padding-top: 10px;
+            
+            h3{
+                text-align: center;
+                font-weight: $black;
+            }
+            
+        }
+    }
+    a{
+        color: $blanco;
+        text-decoration: none;
+        font-size: 1.7rem;
+        padding: 0.8rem;
+        text-align: center;
+
+
+    }
+    .navegacion{
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+
+    }
+    
+ 
+    .copyright {
+        color: $blanco;
+        text-align: center;
+
+    }
+    
+    .contacto{
+        text-align: left;
+        padding: 1.2rem;
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        word-wrap: break-word;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        p,h1{
+            color: $blanco;
+            
+        }
+            
+            
+
+    }
+    
+
+    :root {
+        --facebook: #3b5999;
+        --instagram: #e4405f;
+        --twitter: #55acee;
+    }
+    .redes-container{
+        display:flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        ul{
+            h3{
+                font-size: 4rem;
+                font-weight: bolder;
+                text-align: center;
+                -webkit-text-stroke: 0.8px rgba(0, 0, 0, 0.842);
+                color: $blanco;
+                
+                
+            }
+
+        }
+        
+        
+    }
+    .redes-container {
+        ul{
+       
+            li{
+                display: inline-block;
+                margin: 0 5px 5px;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+            }
+        }
+       
+    }
+    .redes-container ul li a{
+        display: block;
+        padding: 15 16px;
+        background: #333;
+        color: #fff;
+        
+        font-size: 18px;
+        box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
+        transition: .2s;
+    }
+    .redes-container ul:hover a{
+        filter: blur(2px);
+    }
+    .redes-container {
+        ul{ 
+            li{ 
+                a{
+                    &:hover{
+                        transform: translateY(-3px) scale(1.05);
+                        box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
+                        filter: none;
+                    }
+        }   }   }
+
+
+    }
+    .whatsapp{
+        
+        margin-top: 10px;
+        i{
+            cursor: pointer;
+            margin: 5px;
+            color: $blanco;
+            background-color: green;
+            font-size: 3rem;
+            border-radius: 80%;
+            box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.89);
+            padding: 2rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            @include tablet {
+                font-size: 6rem;
+            }
+            
+            
+            
+        }
+        i:hover{
+            background-color: $blanco;
+            color: green;
+        }
+    }
+}
+
+.redes-container{
+    ul{
+        li{
+            .facebook{
+                &:hover{
+                    background-color:#3b5999;
+                }
+            }
+        }
+    }
+}
+
+.redes-container{
+    ul{
+        li{
+            .instagram{
+                &:hover{
+                    background-color: #e4405f;
+                }
+            }
+        }
+    }
+}
+.redes-container{
+    ul{
+        li{
+            .twitter{
+                &:hover{
+                    background-color: #55acee;
+                }
+            }
+        }
+    }
+}  
+ 

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="build/img/logo_.webp">
+    <title>Funeraria Ibañez | Cotizar</title>
+    <link rel="stylesheet" href="./build/css/app.css">
+    <script src="https://kit.fontawesome.com/90e8f06232.js" crossorigin="anonymous"></script>
+    
+
+
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+                
+            
+            <div class="barra">
+                <a href="index.html">
+                
+                   <img class="logo" src="./build/img/logo_.webp" alt="Logotipo de Servicios Funerarios">
+                </a>
+
+                <div class="mobile-menu">
+                    <img src="/build/img/barras.svg" alt="Icono Responsive">
+                    
+
+                </div>
+                <div class="derecha">
+                    <img class="dark-mode-boton" src="/build/img/dark-mode.svg" alt="">
+                    <nav class="navegacion">
+
+                        <ul class="menu-horizontal">
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li>
+                                <a href="#">Nuestros Servicios  <span><i class="fa-solid fa-caret-down"></i></span></a>
+                                <ul class="menu-vertical">
+                                    <li><a href="servicios.html">Servicios</a></li>
+                                    <li><a href="asesoria.html">Asesorías</a></li>
+                                    <li><a href="compra_anticipada.html">Compra Anticipada</a></li>
+                                    <li><a href="cotizar.html">Cotizar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contacto.html">Contáctanos</a></li>
+                           
+                            
+                
+                        </ul>
+
+                    </nav>
+                </div>
+                
+            </div><!--Cierre barra-->
+
+           
+            
+        </div>   
+          
+
+        
+    </header>
+    <main class="contenedor seccion formulario-mapa">
+        <h2>Cotiza con Nosotros</h2>
+       <form class="formulario" id="formulario" action="formcotizacion.php" method="POST">
+            <fieldset>
+                <legend>Información personal</legend>
+                <label for="nombre" >Nombre</label>
+                <input type="text" placeholder="Ingresa tu Nombre" id="nombre" name="nombre" 
+                required pattern="{3,50}" title="Tamaño mínimo: 3. Tamaño máximo: 50">
+                <label for="mensaje" >Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <legend id="titulo-contacto">Tipo de Servicio:</legend>
+
+                <label for="opciones">Seleccione el tipo de servicio</label>
+                <select id="opciones" name="contacto[tipo]" required>
+                    <option value=""  selected disabled>-- Seleccione --</option>
+                    <option value="Servicio Estandar">Servicio Estándar</option>
+                    <option value="Servicio Tradicional">Servicio Tradicional</option>
+                    <option value="Servicio Premium">Servicio Premium</option>
+                    <option value="Servicio Gold">Servicio Gold</option>
+                </select>
+
+            </fieldset>
+            <fieldset>
+                <legend>Datos Contacto</legend>
+                <h7>Como desea ser contáctado</h7>
+                <br><br>
+                <div class="forma-contacto">
+                    <label for="contactar-telefono">Teléfono</label>
+                    <input type="radio" value="telefono" id="contactar-telefono" name="contacto[contacto]" required> 
+
+                    <label for="contactar-email">Correo</label>
+                    <input type="radio" value="email" id="contactar-email" name="contacto[contacto]" required>
+
+                </div>
+                <div id="contacto"></div>
+
+            </fieldset>
+
+
+            <input type="submit" value="Enviar" name="submit" class="boton-verde">
+        </form>
+
+
+</main>
+    <div class="mapa">
+        <h3>Estamos localizados en La Comuna de <Strong>La Granja</Strong>. <br> Cobertura es en Toda la Region Metropolitana <br>(Regiones Consultar Vía mensaje Cobertura)</h3>
+        <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d807.6373765213573!2d-70.63306480526218!3d-33.54787630982356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662da72bd521f21%3A0x81fcde7e1327d354!2sFuneraria%20Ibanez!5e0!3m2!1ses!2scl!4v1666799218493!5m2!1ses!2scl" style="border:0;" allowfullscreen="" width="100%" height="250" frameborder="0"></iframe>
+    </div> 
+
+
+<footer class="footer seccion">
+    <div class="contenedor contenedor-footer">
+        <div class="navegacion">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contáctanos</a>
+        </div>
+
+        <div class="redes-container">
+            <ul>
+                <h3>Síguenos</h3>
+                <li>
+                    <a href="https://www.facebook.com/Iba%C3%B1ez-Servicios-Funerarios-789267221282719/?modal=admin_todo_tour" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/funerariaibanez/" class="instagram"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/IbanezFuneraria" class="twitter"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <section class="contacto">
+            <h1>Contactános</h1>
+            <p> <span><i class="fa-solid fa-mobile-screen-button"></i> </span>  +56991443374</p>
+            <p> <span><i class="fa-solid fa-phone"></i> </span>  +56225053730</p>
+            <p> <span><i class="fa-regular fa-envelope"></i></span> info@funerariaibanez.cl</p>
+            <p><span><i class="fa-solid fa-location-dot"></i></span> Av. Santa Rosa #9492 - Loc. 1, <br>
+                La granja, Santiago</p>
+
+        </section>
+        
+    
+        
+    </div>
+
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=56991443374"><i class="fa-brands fa-whatsapp"></i></a>
+        
+    </div>
+    <p class="copyright">Realizado por Camila Rifo derechos reservados 2022 &copy;</p>
+
+</footer>
+
+
+<script src="build/js/bundle.min.js"></script> 
+
+
+
+</body>
+
+</html>

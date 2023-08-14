@@ -1,0 +1,100 @@
+@include tablet{
+    .servicio-asesoria{
+        @include grid(1, 1rem);
+        
+       
+   
+    } 
+}
+
+.servicio-asesoria{
+    .box{
+        .icono {
+            
+           
+            i{
+                font-size: 10rem;
+                padding-top: 1rem;
+               
+            }
+            p{
+                span{
+                    i{
+                        font-size: 2rem;
+                   }
+                }
+            }
+            h2{
+                text-align: left;
+            }
+        }
+    }
+}
+
+.icono{
+    text-align:center;
+    padding: 1.2rem;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    word-wrap: break-word;
+  
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px;
+
+    
+
+    
+
+    img{
+        height: 10rem;
+        
+
+
+    }
+    h3{
+        text-transform: uppercase;
+        
+
+    }
+    p{
+        text-align: left;
+        
+    }
+}
+
+.icono:hover {
+  box-shadow: 0 0 25px 0 rgba(20,27,201,.05);
+  cursor: pointer;
+  background-image: 
+    linear-gradient(-45deg, #27b88d 0%, #22dd73 100%);
+  
+}
+
+.servicio-asesoria .box:nth-child(1) .icono:hover
+{
+    background-image: 
+    linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+}
+
+.servicio-asesoria .box:nth-child(3) .icono:hover
+{
+    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%);
+    
+}
+
+
+
+.servicio-asesoria .box:nth-child(4) .icono:hover
+{
+    background-image: 
+    linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%);
+}
+
+
+
+
+
+
+
+

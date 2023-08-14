@@ -1,0 +1,33 @@
+.boton-verde{
+    @include boton($verde, inline-block);
+}
+.boton-verde-contacto{
+    @include botoncontacto($verde, inline-block);
+}
+
+.boton-verde-block{
+    @include boton($verde, block);
+}
+
+.boton-amarillo{
+    @include boton($amarillo, inline-block);
+}
+
+.boton-amarillo-block{
+    @include boton($amarillo, block);
+}
+
+.boton-rojo-block{
+    @include boton($rojo, block);
+    width: 100%;
+}
+
+.boton-celeste-block{
+    @include boton($celeste, block);
+    width: 100%;
+}
+
+.boton-celeste{
+    @include boton($celeste, inline-block);
+    
+}
